@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div>
+
+        <div class="container-start" >
+        <div class="title2">
+            <div class="col"><img src="{{ asset('assets/pictures/Home.png') }}" width="1450" height="500"/></div>
+        </div>
+        </div>      
+    </div>
+    <hr>
+     <div class="container">
+        <p class="text-center"> BEST SELLER </p>
+    </div>
+     <hr>
+    <div class="images-container">
+     {% for home in home %}
+    
+    <div class="image">
+          <div class="col"><img src="{{ asset('assets/pictures/' ~ home.illustration) }}" alt="" title="{{ home.name }}"width="300" height="300"/> </div>
+   
+    </div>
+          
+     {% endfor %}
+    </div>
+    <hr>
+    <a href="{{ path ('app_reservations') }}"><button type="button" class="btn btn-dark ">RESERVATION</button></a>
+
+{% endblock %}

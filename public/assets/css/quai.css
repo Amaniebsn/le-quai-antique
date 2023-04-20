@@ -1,0 +1,26 @@
+.titre
+{
+  text-align: center;
+  background-color: antiquewhite;
+  color: white;
+}
+
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 1 0 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
